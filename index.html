@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phimmoi</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
     <div class="navbar">
-        <div>
-            <!-- logo -->
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./asset/cinema-and-movie-3d-icon-free-png.png" alt="">
+            </a>
         </div>
 
         <div class="page">
-            <a href="">Log in</a>
+            <a href="./login/login.html">Log in</a>
             <a href="">Movies</a>
             <a href="">Categories</a>
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">
+                <i class="fa fa-search"></i>
+            </button>
 
             <div class="icon">
-                <!-- search bar -->
-                <!-- user profile -->
+                <i class="fa-solid fa-user"></i>
             </div>
         </div>
 
     </div>
 
-    <div class="main-content">
-        <div class="landing">
-            <!-- idk its like the this is us sign up now thing -->
-            <h2>Unlimited Movie, TVs Shows, & More.</h2>
-            <a href="signup/register.html">Sign up now!</a>
-        </div>
+    <section class="main">
+        <div class="main-content">
+            <div class="bg-image-container">
+                <img src="https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+                    alt="BG hero image" class="bg-image" />
+            </div>
+            <div class="bg-overlay"></div>
 
-        <div class="popular-movies">
+            <div class="landing">
+                <!-- idk its like the this is us sign up now thing -->
+                <h1 class="title"> Unlimited Movie, TVs Shows, & More. </h1>
+                <a href="signup/register.html">Sign up now!</a>
+            </div>
+
+            <div class="popular-movies">
+
+            </div>
+
+            <div class="">
+
+            </div>
         </div>
-    </div>
+    </section>
 
     <script src="app.js"></script>
 </body>
+
 </html>
