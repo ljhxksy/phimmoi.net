@@ -7,40 +7,37 @@
     <link rel="stylesheet" href="../account.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../asset/cinema-and-movie-3d-icon-free-png.png" alt="">
-            </a>
-        </div>
+    <div class="head">
+        <!-- logo -->
+        <a href="../index.html">logo</a>
     </div>
 
-    <div class="account" id="register">
-        <h2>Register</h2>
-        <form id="register-form">
-            <div class="user-box">
-                <input type="text" placeholder="Username">
-            </div>
-
-            <div class="user-box">
+    
+    <div class="account" id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="user-box"> 
                 <input type="text" name="email" id="email" placeholder="Email"
                 required>
             </div>
-
+            
             <div class="user-box">
                 <input type="text" name="password" id="password" 
                 placeholder="Password" required>
             </div>
 
             <div class="selector">
-                <a href="../login/login.html" class="account-1">
-                    Already have an account?
+                <a href="../signup/register.html" class="account">
+                    Don't have an account?
                 </a>
                 <button type="submit" class="btn">Submit</button>
             </div>
         </form>
+
     </div>
-    
-    <script src="./register.js"></script>
+
+
+
+    <script src="./login.js"></script>
 </body>
 </html>
