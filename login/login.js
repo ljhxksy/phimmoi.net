@@ -1,21 +1,30 @@
+if (localStorage.getItem("currentUser")) {
+    location.href = "/index.html";
+}
+
 let login = document.getElementById("login-form");
-login.addEventListener("submit", function(event) {
+login.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    let users = JSON.parse(localStorage.getItem("users"));
-    console.log("users: ", users);
+    if (!localStorage.getItem("users")) {
+        alert("No user found!");
+    } else {
+        let users = JSON.parse(localStorage.getItem("users"));
 
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].email == login.email.value.trim()) {
-            if (users[i].password == login.password.value.trim()) {
-                alert("Login successfully!");
-                window.location.href = "../index.html";
-            } else {
-                alert("Wrong password");
-            }
+        let email = document.getElementById("email");
+        let password = document.getElementById("password");
+        
+        let existingUser = users.find(
+            (index) =>
+            index.email === email.value.trim() &&
+            index.password === password.value.trim()
+        );
+
+        if (existingUser) {
+            localStorage.setItem("currentUser", JSON.stringify(existingUser));
+            location.href = "/index.html";
+        } else {
+            alert("Email or password is incorrect!");
         }
-    }
-    if (users[users.length - 1].email != login.email.value.trim()) {
-        alert("Wrong email");
     }
 });
