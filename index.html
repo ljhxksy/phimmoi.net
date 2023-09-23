@@ -22,89 +22,35 @@
 </head>
 
 <body>
+  <!-- navigation bar -->
+  <div id="notLoggedIn"></div>
+  <div id="loggedIn"></div>
 
-  <div class="navbar">
-    <div class="logo">
-      <a href="./index.html">
-        <img src="./asset/Untitled-1.svg" alt="">
-      </a>
-    </div>
 
-    <div class="page">
-      <a href="./login/login.html">Log in</a>
-      <a href="">Movies</a>
-      <a href="">Categories</a>
-      <a href="" class="icon">
-        <i class="fa-solid fa-user"></i>
-      </a>
-      <div class="container h-100">
-        <div class="d-flex justify-content-center h-100">
-          <div class="searchbar">
-            <input class="search_input" type="text" name="" placeholder="Search...">
-            <a href="#" class="search_icon"><i class="fas fa-search "></i></a>
-          </div>
+  <section class="main">
+    <div class="main-content">
+      <div class="bg-overlay"></div>
+
+      <div id="notLoggedIn"></div>
+      <div id="loggedIn">
+        <div class="bg-image-container">
+          <img src="https://d135u4jtzauizi.cloudfront.net/_hero/104983/Zone-Of-Interest_Cannes-Image.webp"
+            alt="BG hero image" class="bg-image" />
+        </div>
+
+        <div class="landing">
+          <div id="notLoggedIn-nav"></div>
+          <div id="loggedIn-nav"></div>
         </div>
       </div>
 
-
-    </div>
-
-  </div>
-
-    <section class="main">
-      <div class="main-content">
-        <div class="bg-overlay"></div>
-
-        <div id="notLoggedIn"></div>
-        <div id="loggedIn">
-          <div class="bg-image-container">
-            <img src="https://d135u4jtzauizi.cloudfront.net/_hero/104983/Zone-Of-Interest_Cannes-Image.webp"
-          alt="BG hero image" class="bg-image" />
-          </div>
-            
-
-
-          <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-              <div class="carousel-item active bg-image-container">
-                <img src="https://d135u4jtzauizi.cloudfront.net/_hero/104983/Zone-Of-Interest_Cannes-Image.webp" class="d-block w-100 bg-image" alt="BG hero image">
-              </div>
-              <div class="carousel-item">
-                <img src="https://d135u4jtzauizi.cloudfront.net/_hero/104983/Zone-Of-Interest_Cannes-Image.webp" class="d-block w-100" alt="BG hero image">
-              </div>
-              <div class="carousel-item">
-                <img src="https://d135u4jtzauizi.cloudfront.net/_hero/104983/Zone-Of-Interest_Cannes-Image.webp" class="d-block w-100" alt="BG hero image">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-
-
-
-            <div class="landing">
-            <h1 class="title"> Welcome back! </h1>
-            <p>Here are some movies for you!</p>
-            </div>
-        </div>
-        
-        <div class="popular-movies">
-          <h2 class="popular-movies-title">Popular Movies</h2>
+      <div class="popular-movies">
+        <h2 class="popular-movies-title">Popular Movies</h2>
+        <div class="movie-list" id="movie-list"></div>
+        <!-- <a href="./movie_details/movie_details.html">
           <div class="movie-card">
             <div class="movie-header theDarkTower">
-              <div class="header-icon-container">
-                <a href="#">
-                  <i class="material-icons header-icon"></i>
-                </a>
-              </div>
-            </div><!--movie-header-->
+            </div>
             <div class="movie-content">
               <div class="movie-content-header">
                 <a href="#">
@@ -116,16 +62,16 @@
               </div>
             </div>
           </div>
-        </div><!--movie-card-->
+        </a> -->
 
-        <div class="movie-card">
+        <!-- <div class="movie-card">
           <div class="movie-header bladeRunner2049">
             <div class="header-icon-container">
               <a href="#">
                 <i class="material-icons header-icon"></i>
               </a>
             </div>
-          </div><!--movie-header-->
+          </div>
           <div class="movie-content">
             <div class="movie-content-header">
               <a href="#">
@@ -135,26 +81,20 @@
                 <p>idk</p>
               </div>
             </div>
-          </div><!--movie-content-->
-        </div><!--movie-card-->
-
+          </div>
+        </div> -->
       </div>
-  </div>
-
-  <div class="">
-
-  </div>
-  </div>
-  </section>
+    </section>
   </div>
 
 
 
-
-
-
-  <script src="navbar.js"></script>
   <script src="app.js"></script>
+  <script src="./popular-movies.js"></script>
+  <!-- <script src="./movie-details.js"></script> -->
+  <script src="landing.js"></script>
+  <script src="navbar.js"></script>
+
 </body>
 
 </html>

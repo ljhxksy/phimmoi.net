@@ -17,13 +17,10 @@ a {
     cursor: pointer;
 }
 
-img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.logo {
+.logo img {
     width: 80px;
+
+    object-fit: cover;
 }
 
 .navbar {
@@ -68,7 +65,7 @@ img {
 .landing {
     position: absolute;
     top: 40%;
-    right: 60%;
+    margin-left: 15vh;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -80,74 +77,44 @@ img {
     font-size: 2rem;
 }
 
-
+.searchbar .search-btn {
+    background-color: none;
+    border-color: white;
+}
 
 .searchbar {
     margin-bottom: auto;
-    margin-top: auto;
+    width: 40vw;
     height: 40px;
-    background-color: #353b488d;
-    border-radius: 30px;
     padding: 15px;
 }
 
-.search_input {
+.fa-search:before {
     color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color: transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-}
-
-.searchbar:hover>.search_input {
-    padding: 0 10px;
-    font-size: 20px;
-    width: 200px;
-    caret-color: #a803f4;
-    transition: width 0.2s linear;
-}
-
-.searchbar:hover>.search_icon {
-    color: white;
-}
-
-.search_icon {
-    height: 40px;
-    width: 40px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
-}
-
-.searchbar:hover>.search_input {
-    padding: 0 10px;
-    width: 200px;
-    caret-color: #a803f4;
-    transition: width 0.2s linear;
-}
-
-.search_icon {
-    height: 10px;
-    width: 10px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
-    padding-top: 0;
-    padding-left: 10px;
 }
 
 .navbar .page {
     display: flex;
     gap: 20px;
+    top: 20px;
 }
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+#dropdownMenuButton {
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 5px;
+    margin-top: -5px;
+}
+
